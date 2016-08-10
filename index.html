@@ -20,25 +20,25 @@
           <div class="form-group">
             <div class="input-group"><!--START Radio-->
               <span class="input-group-addon">
-                <input type="radio" name="food" aria-label="Italian" checked>
+                <input type="radio" name="food" value="Italian" checked>
               </span>
               <label class="form-control form-inline">Italian</label>
             </div>
             <div class="input-group">
               <span class="input-group-addon">
-                <input type="radio" name="food" aria-label="Mexican">
+                <input type="radio" name="food" value="Mexican">
               </span>
               <label class="form-control form-inline" >Mexican</label>
             </div>
             <div class="input-group">
               <span class="input-group-addon">
-                <input type="radio" name="food" aria-label="Dog-Food">
+                <input type="radio" name="food" value="Dog Food">
               </span>
               <label class="form-control form-inline" >Dog Food</label>
             </div>
             <div class="input-group">
               <span class="input-group-addon">
-                <input type="radio" name="food" aria-label="None">
+                <input type="radio" name="food" value="None">
               </span>
               <label class="form-control form-inline" >None of the above</label>
             </div>
@@ -54,10 +54,19 @@
               <option>Norwegian Death Metal</option>
             </select>
           </div><!--END Select Box-->
-          
+
+          <div><!--START Color Picker-->
+            <div class="form-group">
+              <label for="color">What is your favorite color?</label>
+              <input id="color" class="form-control" type="color">
+            </div>
+          </div><!--END Color Picker-->
           <button type="submit" class="btn btn-warning">Submit</button>
         </form>
       </div> <!-- END form -->
+      <p>Greetings <span id="nameDisplay"><span></p>
+      <p>Your favorite food is <span id="foodDisplay"></span></p>
+      <p>Apparently, you enjoy listening to <span id="musicDisplay"></span> music.</p>
     </div> <!-- END main container -->
   </body>
 </html>
