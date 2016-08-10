@@ -58,15 +58,18 @@
           <div><!--START Color Picker-->
             <div class="form-group">
               <label for="color">What is your favorite color?</label>
-              <input id="color" class="form-control" type="color">
+              <input id="color" class="form-control" type="color" value="#ff9933">
             </div>
           </div><!--END Color Picker-->
           <button type="submit" class="btn btn-warning">Submit</button>
+          <button id="resetBtn" type="reset" class="btn btn-danger">Reset</button>
         </form>
       </div> <!-- END form -->
-      <p>Greetings <span id="nameDisplay"><span></p>
-      <p>Your favorite food is <span id="foodDisplay"></span></p>
-      <p>Apparently, you enjoy listening to <span id="musicDisplay"></span> music.</p>
+      <div id="greeting">
+        <p>Greetings <span id="nameDisplay"><span></p>
+        <p>Your favorite food is <span id="foodDisplay"></span></p>
+        <p>Apparently, you enjoy listening to <span id="musicDisplay"></span> music.</p>
+      </div>
     </div> <!-- END main container -->
   </body>
 </html>

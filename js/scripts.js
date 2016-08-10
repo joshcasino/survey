@@ -13,10 +13,13 @@ $(document).ready(function(){
 		var favoriteColor = $("#color").val();
 		$(".container").css("background-color", favoriteColor);
 
-		event.preventDefault();
+		$("#greeting").show();
 
+		event.preventDefault();
 	});
 
-
-
+	$("#resetBtn").click(function() {
+		$("#greeting").hide();
+		$(".container").css("background-color", "white");
+	});
 });
