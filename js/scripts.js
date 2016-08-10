@@ -11,7 +11,9 @@ $(document).ready(function(){
 		$("#musicDisplay").text(music);
 
 		var favoriteColor = $("#color").val();
-		$(".container").css("background-color", favoriteColor);
+		$("#colorDisplay").css("background-color", favoriteColor);
+		$("#colorDisplay").text(favoriteColor);
+		// $(".container").css("background-color", favoriteColor);
 
 		$("#greeting").show();
 
@@ -20,6 +22,19 @@ $(document).ready(function(){
 
 	$("#resetBtn").click(function() {
 		$("#greeting").hide();
-		$(".container").css("background-color", "white");
+		// $(".container").css("background-color", "white");
 	});
+
+	$("#ageSubmit").click(function() {
+		var dob = $("#born").val();
+		dob = parseInt(dob);
+
+		if (dob < 1995){
+			$("#ageContainer").hide();
+			$("#mainPage").show();
+		} else {
+			alert("Get older!");
+		}
+	});
+
 });

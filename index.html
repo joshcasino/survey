@@ -8,16 +8,29 @@
     <title>Epicodus Survey</title>
   </head>
   <body>
-    <div class="container"> <!-- START main container -->
+    <div id="ageContainer" class="container"> <!-- START age container -->
+
+      <h1>Super Serious Survey</h1>
+      <h3>Must be of Age</h3>
+      <div class="form-group">
+        <label for="born">Date of birth:</label>
+        <input id="born" class="form-control" type="date">
+      </div>
+
+      <button type="submit" id="ageSubmit" class="btn btn-default">Enter Page</button>
+    </div> <!-- END age container -->
+
+    <div id="mainPage" class="container"> <!-- START main container -->
       <div id="surveyForm"> <!-- START form -->
         <form>
           <div class="input-group">
             <span class="input-group-addon" id="basic-addon1">Enter your name</span>
             <input id="name" type="text" class="form-control" placeholder="John Doe" aria-describedby="basic-addon1"></input>
           </div>
-
+          <br>
 
           <div class="form-group">
+            <label>What is your favorite food? </label>
             <div class="input-group"><!--START Radio-->
               <span class="input-group-addon">
                 <input type="radio" name="food" value="Italian" checked>
@@ -65,11 +78,21 @@
           <button id="resetBtn" type="reset" class="btn btn-danger">Reset</button>
         </form>
       </div> <!-- END form -->
-      <div id="greeting">
-        <p>Greetings <span id="nameDisplay"><span></p>
-        <p>Your favorite food is <span id="foodDisplay"></span></p>
-        <p>Apparently, you enjoy listening to <span id="musicDisplay"></span> music.</p>
+
+      <div id="greeting" class="row">
+        <div class="col col-xs-6">
+          <div>
+            <p>Greetings <span id="nameDisplay"><span></p>
+            <p>Your favorite food is <span id="foodDisplay"></span></p>
+            <p>Apparently, you enjoy listening to <span id="musicDisplay"></span> music.</p>
+            <p>And your favorite color is <span id="colorDisplay">asdfsadf</span>.</p>
+          </div>
+        </div>
+        <div class="col col-xs-6 pull-right">
+          <img class="img-responsive" src="img/walrus.jpg" alt="Walrus">
+        </div>
       </div>
+
     </div> <!-- END main container -->
   </body>
 </html>

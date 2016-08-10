@@ -14,3 +14,12 @@
 #greeting {
   display: none;
 }
+
+p {
+  font-size: 40px;
+}
+
+#mainPage {
+  display: none;
+  
+}
